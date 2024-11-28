@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +14,7 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="view/src/dist/css/adminlte.min.css">
 </head>
-<body class="hold-transition sidebar-mini">
+<body class="sidebar-mini layout-navbar-fixed layout-fixed layout-footer-fixed">
 <!-- Site wrapper -->
 <div class="wrapper">
   <!-- Navbar -->
@@ -154,11 +156,10 @@
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <aside class="main-sidebar elevation-4 sidebar-dark-danger">
     <!-- Brand Logo -->
-    <a href="view/src/index3.html" class="brand-link">
-      <img src="view/src/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+    <a href="view/src/index3.html" class="brand-link bg-white">
+      <img src="view/src/img/sistema/logo.png" alt="AdminLTE Logo" class="brand-image" style="opacity: .8">      
     </a>
 
     <!-- Sidebar -->
