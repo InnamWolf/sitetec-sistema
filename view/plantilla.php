@@ -22,7 +22,7 @@
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <?php include "view/components/sidebar.php"; ?>
+<?php include "view/components/sidebar.php"; ?>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
