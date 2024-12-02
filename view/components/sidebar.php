@@ -26,7 +26,7 @@
 
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <li class="nav-item">
-                <a href="inicio" class="nav-link <?php if ($ruta_especifica == "/inicio"): ?> active <?php endif ?>">
+                <a href="home" class="nav-link <?php if ($ruta_especifica == "/home"): ?> active <?php endif ?>">
                     <i class="nav-icon fas fa-home"></i>
                     <p>Inicio</p>
                 </a>
