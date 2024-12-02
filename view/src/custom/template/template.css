@@ -1,0 +1,5 @@
+.login-page, .register-page{
+    background-image: url('/view/src/img/sistema/login.jpg');
+    background-position: center;
+    background-size: cover;
+}

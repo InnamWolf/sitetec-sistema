@@ -12,8 +12,19 @@
   <link rel="stylesheet" href="view/src/plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="view/src/dist/css/adminlte.min.css">
+  <!-- Template Personalizado -->
+  <link rel="stylesheet" href="view/src/custom/template/template.css">
 </head>
 <body class="sidebar-mini layout-navbar-fixed layout-fixed layout-footer-fixed">
+
+<?php 
+
+  include "view/pages/login/login.php"; 
+  echo '</body><head>';
+  return;
+
+?>
+
 <!-- Site wrapper -->
 <div class="wrapper">
   <!-- Navbar -->
@@ -39,7 +50,7 @@
         include "view/pages/404/404.php";   
       }
     }else{
-      include "view/pages/home/home.php"; 
+      //include "view/pages/home/home.php";
     }
       
   ?>
