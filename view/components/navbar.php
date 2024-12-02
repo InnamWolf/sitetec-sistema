@@ -28,7 +28,7 @@
       <!-- Exit -->
       <li class="nav-item dropdown">
         <a class="nav-link" href="#">
-            <i class="fas fa-sign-out-alt"></i>             
+            <i class="fas fa-sign-out-alt"></i>
         </a>
       </li>
 

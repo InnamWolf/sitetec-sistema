@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,7 +60,7 @@
           </div>
         </div>
         <div class="card-body">
-          Start creating your amazing application!
+          Start creating your amazing application!          
         </div>
         <!-- /.card-body -->
         <div class="card-footer">

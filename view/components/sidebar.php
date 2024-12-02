@@ -1,3 +1,7 @@
+<?php
+  $uri_actual = $_SERVER['REQUEST_URI'];
+  $ruta_especifica = parse_url($uri_actual, PHP_URL_PATH);    
+?>
 <aside class="main-sidebar elevation-4 sidebar-dark-danger">
     <!-- Brand Logo -->
     <a href="view/src/index3.html" class="brand-link bg-white">
@@ -22,35 +26,35 @@
 
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <li class="nav-item">
-                <a href="" class="nav-link active">
+                <a href="inicio" class="nav-link <?php if ($ruta_especifica == "/inicio"): ?> active <?php endif ?>">
                     <i class="nav-icon fas fa-home"></i>
                     <p>Inicio</p>
                 </a>
             </li>
 
             <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="usuarios" class="nav-link <?php if ($ruta_especifica == "/usuarios"): ?> active <?php endif ?>">
                     <i class="nav-icon fas fa-user"></i>
                     <p>Usuarios</p>
                 </a>
             </li>
 
             <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="clientes" class="nav-link <?php if ($ruta_especifica == "/clientes"): ?> active <?php endif ?>">
                     <i class="nav-icon fas fa-users"></i>
                     <p>Clientes</p>
                 </a>
             </li>
 
             <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="proveedores" class="nav-link <?php if ($ruta_especifica == "/proveedores"): ?> active <?php endif ?>">
                     <i class="far fa-id-card"></i>
                     <p>Proveedores</p>
                 </a>
             </li>
            
             <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="proyectos" class="nav-link">
                     <i class="fas fa-folder"></i>
                     <p>
                         Proyectos
@@ -61,25 +65,25 @@
                 <ul class="nav nav-treeview">
 
                     <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a href="/proyectosActivos" class="nav-link">
                             <i class="far fa-circle nav-icon"></i>
                             <p>Activos</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a href="/proyectosPosibles" class="nav-link">
                             <i class="far fa-circle nav-icon"></i>
                             <p>Posibles</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a href="/proyectosTerminados" class="nav-link">
                             <i class="far fa-circle nav-icon"></i>
                             <p>Terminados</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a href="/proyectosCancelados" class="nav-link">
                             <i class="far fa-circle nav-icon"></i>
                             <p>Cancelados</p>
                         </a>
@@ -89,7 +93,7 @@
             </li>
 
             <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="/ticketsSoporte" class="nav-link">
                     <i class="fas fa-ticket-alt"></i>
                     <p>
                         Tickets Soporte
@@ -100,25 +104,19 @@
                 <ul class="nav nav-treeview">
                     
                     <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a href="/ticketsActivos" class="nav-link">
                             <i class="far fa-circle nav-icon"></i>
                             <p>Activos</p>
                         </a>
-                    </li>
+                    </li>                   
                     <li class="nav-item">
-                        <a href="" class="nav-link">
-                            <i class="far fa-circle nav-icon"></i>
-                            <p>Posibles</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a href="/ticketsTerminados" class="nav-link">
                             <i class="far fa-circle nav-icon"></i>
                             <p>Terminados</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a href="/ticketsCancelados" class="nav-link">
                             <i class="far fa-circle nav-icon"></i>
                             <p>Cancelados</p>
                         </a>
@@ -128,7 +126,7 @@
             </li>
             
             <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="/documentos" class="nav-link">
                     <i class="fas fa-file"></i>
                     <p>
                         Documentos
@@ -139,19 +137,19 @@
                 <ul class="nav nav-treeview">
 
                     <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a href="/contratos" class="nav-link">
                             <i class="far fa-circle nav-icon"></i>
                             <p>Contratos</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a href="/presupuestos" class="nav-link">
                             <i class="far fa-circle nav-icon"></i>
                             <p>Presupuestos</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a href="/renovaciones" class="nav-link">
                             <i class="far fa-circle nav-icon"></i>
                             <p>Renovaciones</p>
                         </a>
@@ -160,26 +158,32 @@
             </li>
 
             <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="ventas" class="nav-link <?php if ($ruta_especifica == "/ventas"): ?> active <?php endif ?>">
                     <i class="fas fa-hand-holding-usd"></i>
                     <p>Ventas</p>
                 </a>
             </li>
 
             <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="mensajes" class="nav-link <?php if ($ruta_especifica == "/mensajes"): ?> active <?php endif ?>">
                     <i class="fas fa-comment"></i>
                     <p>Mensajes</p>
                 </a>
             </li>
 
             <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="servicios" class="nav-link <?php if ($ruta_especifica == "/servicios"): ?> active <?php endif ?>">
                     <i class="fas fa-hand-holding-heart"></i>
                     <p>Servicios</p>
                 </a>
             </li>
 
+            <li class="nav-item">
+                <a href="/salir" class="nav-link">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <p>Cerrar sesión</p>
+                </a>
+            </li>
         </ul>
         
         </nav>
