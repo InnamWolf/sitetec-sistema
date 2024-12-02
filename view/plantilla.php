@@ -23,10 +23,11 @@
   <!-- Main Sidebar Container -->
 <?php include "view/components/sidebar.php"; ?>
 
+  <!--
   //*===============================================
   //* Lista blanca
-  //* ===================================================
-
+  //* ==============================================
+  -->
   <?php 
     if(isset($_GET["url"])){       
 
@@ -34,6 +35,8 @@
           $_GET["url"] == "usuarios" 
       ){
         include "view/pages/".$_GET["url"]."/".$_GET["url"].".php";  
+      }else{
+        include "view/pages/404/404.php";   
       }
     }else{
       include "view/pages/home/home.php"; 
@@ -41,9 +44,11 @@
       
   ?>
 
+  <!--
   //*===============================================
   //* Footer
-  //* ===================================================
+  //* ==============================================
+  -->
 
   <?php include "view/components/footer.php"; ?>
 
