@@ -35,7 +35,7 @@
 
 ?>
 
-<?php if (isset($_SESSION["credencial"])): ?>
+<?php if (isset($_SESSION["credencial"])  && $_SESSION["credencial"] == "ok"): ?>
 
 <!-- Site wrapper -->
 <div class="wrapper">

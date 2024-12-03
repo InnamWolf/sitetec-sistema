@@ -18,7 +18,13 @@
 
                     if(is_array($respuesta) && $respuesta["correo"] == $_POST["loginEmail"] && $respuesta["password"] == $_POST["loginPassword"]){
 
-                        $_SESSION["credencial"] = "respuesta";                      
+                        $_SESSION["credencial"] = "ok";
+                        $_SESSION["id"] = $respuesta["id"];
+                        $_SESSION["nombre"] = $respuesta["nombre"];
+                        $_SESSION["apellido_paterno"] = $respuesta["apellido_paterno"];
+                        $_SESSION["apellido_materno"] = $respuesta["apellido_materno"];
+                        $_SESSION["correo"] = $respuesta["correo"];
+                        $_SESSION["rol"] = $respuesta["rol"];
                         
                          echo'
                          <script>                        
