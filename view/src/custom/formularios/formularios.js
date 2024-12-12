@@ -20,7 +20,7 @@
   })();
 
 //* ===============================================
-//* Funcion para validar formilario
+//* Funcion para validar formulario
 //* ===============================================
 
 function validateJS(event,type){
@@ -38,3 +38,41 @@ function validateJS(event,type){
     }
     
 }
+
+//* ===============================================
+//* Funcion para recordar credenciales de ingreso
+//* ===============================================
+
+function rememberMe(event){
+  
+  if(event.target.checked){
+
+    localStorage.setItem("emailRemember", $('[name="loginEmail"]').val());
+    localStorage.setItem("checkRemember", true);
+
+  }else{
+
+    localStorage.removeItem("emailRemember");
+    localStorage.removeItem("checkRemember");
+
+  }
+
+}
+
+//* ===============================================
+//* Capturar el email para login desde el LocalStorage
+//* ===============================================
+$(document).ready(function(){
+
+  if(localStorage.getItem("emailRemember") != null){
+
+     $('[name="loginEmail"]').val(localStorage.getItem("emailRemember"));
+  }
+
+  if(localStorage.getItem("checkRemember") != null && localStorage.getItem("checkRemember")){
+
+    $('#remember').attr("checked",true);
+
+  }
+
+})

@@ -3,7 +3,7 @@
     <!-- /.login-logo -->
         <div class="card card-outline card-primary">
             <div class="card-header text-center">
-            <img src="/view/src/img/sistema/logo.png" alt="logo SiteTecSol">
+            <img src="/view/src/img/sistema/logo3.svg" alt="logo SiteTecSol" class="logoLogin">
             </div>
             <div class="card-body">
             <p class="login-box-msg">Inicie sesión</p>
@@ -45,7 +45,7 @@
                 <div class="row">
                     <div class="col-8">
                         <div class="icheck-primary">
-                            <input type="checkbox" id="remember">
+                            <input type="checkbox" id="remember" onchange="rememberMe(event)">
                             <label for="remember">
                                 Recordarme
                             </label>
