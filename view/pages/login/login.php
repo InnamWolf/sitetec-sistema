@@ -69,5 +69,4 @@
     </div>
     <!-- /.login-box -->
 </div>
-<script src="view/src/plugins/jquery/jquery.min.js"></script>
 <script src="view/src/custom/formularios/formularios.js"></script>
