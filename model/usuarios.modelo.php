@@ -18,7 +18,7 @@
         
             $stmt -> execute();
         
-            return $stmt -> fetch();      
+            return $stmt -> fetch(); //Regresa 1 solo usuario
 
             }else{
 
@@ -26,7 +26,7 @@
         
             $stmt -> execute();
         
-            return $stmt -> fetchAll();  
+            return $stmt -> fetchAll();  //regresa todos
 
             }
 
