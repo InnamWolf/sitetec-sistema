@@ -10,6 +10,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SiteTecSol</title>
 
+  <base href="<?php echo ControladorPlantilla::path()?>">
+
   <link rel="icon" href="/view/src/img/sistema/logo3.svg">
 
   <!-- Google Font: Source Sans Pro -->
@@ -36,8 +38,6 @@
 <script src="view/src/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="view/src/dist/js/adminlte.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="view/src/dist/js/demo.js"></script>
 <!-- DataTables  & Plugins -->
 <script src="view/src/plugins/datatables/jquery.dataTables.min.js"></script>
 <script src="view/src/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
@@ -87,7 +87,7 @@
     if(isset($_GET["url"])){       
 
       if($_GET["url"] == "home" ||         
-          $_GET["url"] == "usuarios" ||
+          $_GET["url"] == "usuarios" ||          
           $_GET["url"] == "salir" 
       ){
         include "view/pages/".$_GET["url"]."/".$_GET["url"].".php";  
